@@ -1,0 +1,19 @@
+{
+  "name": "kingacademy",
+  "version": "1.0.0",
+  "description": "site para videos de estudo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KsmKayk/KingAcademy.git"
+  },
+  "author": "Kayk Mascarenhas & Bruno Ricardo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KsmKayk/KingAcademy/issues"
+  },
+  "homepage": "https://github.com/KsmKayk/KingAcademy#readme"
+}

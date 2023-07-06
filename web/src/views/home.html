@@ -5,10 +5,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KingAcademy</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
 </head>
 
 <body>
-  <p>Hello World!</p>
+  <header class="header">
+    <div class="logo">
+      <p>KingAcademy</p>
+    </div>
+
+    <div class="header_side">
+      {% if signed == True %}
+      <div class="user">
+        <img class="user_avatar" src="{{ user_email | gravatar }}" alt="user_avatar">
+        <p class="user_name">{{user_name}}</p>
+      </div>
+      <button class="upload" onclick="goToPage('/upload')">Enviar Video</button>
+      <form action="/signout" method="post">
+        <button class="signout" type="submit">Sair</button>
+      </form>
+      {% else %}
+      <button class="signin" onclick="goToPage('/signin')">Entrar</button>
+      <button class="signup" onclick="goToPage('/signup')">Cadastrar</button>
+      {% endif %}
+    </div>
+
+  </header>
+  <div class="container">
+
+  </div>
+
+  <script>
+    function goToPage(page) {
+      window.location.href = page;
+    }
+  </script>
 </body>
 
 </html>

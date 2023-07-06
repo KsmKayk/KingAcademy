@@ -1,0 +1,88 @@
+.header {
+  background-color: #212121;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.logo p {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: inherit;
+  color: #fff;
+}
+
+.header_side {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.signin{
+  width: 80px;
+  margin-right: 20px;
+}
+
+
+.signup{
+  width: 100px;
+}
+
+.signin, .signup, .upload, .signout {
+  height: 30px;
+  border-radius: 8px;
+  background-color: #212121;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.signin:hover, .signup:hover, .upload:hover, .signout:hover {
+  background-color: #424242;
+
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  background-color: #424242;
+  height: 40px;
+  width: 120px;
+  border-radius: 8px;
+}
+
+.user_avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user_name {
+  color: #fff;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.upload {
+  width: 120px;
+  margin-right: 20px;
+}
+
+.signout {
+  width: 50px;
+}
+
+.signout:hover {
+  color: #ee502a;
+}

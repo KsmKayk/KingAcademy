@@ -1,3 +1,9 @@
-__pychache__
-web/__pychache__
-web/src/__pychache__
+# vscode
+.vscode
+
+# python
+__pycache__/
+
+# node
+node_modules
+package-lock.json
